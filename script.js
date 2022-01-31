@@ -15,7 +15,7 @@ function displayRepos(responseJson) {
             <img src='${responseJson.avatar_url}' alt='git-avatar' />
             <div id='git-info'>
                 <p>Name: ${responseJson.name}</p>
-                <p>Number of rpublic epos: ${responseJson.public_repos}</p>
+                <p>Number of public repos: ${responseJson.public_repos}</p>
                 <a href='${responseJson.html_url}'>${responseJson.html_url}</a>
             </div>
             </div>
