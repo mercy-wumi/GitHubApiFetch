@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+}
+
+.container {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+form {
+    padding-top: 5%;
+}
+input[type='submit'] {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#input {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+#results {
+    display: flex;
+    border: 1 solid gray;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(53, 52, 52);
+}
+
+#results img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgb(53, 52, 52);
+    margin-right: 10px;
+}
+#git-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+    max-width: 100%;
+}
+#results {
+    width: 50%;
+}
+}
+@media (max-width: 880px) {
+    .container {
+    max-width: 100%;
+}
+#results {
+    width: 60%;
+}
+}
+@media (max-width: 640px) {
+ #input {
+    width: 70%;
+}
+#results {
+    width: 70%;
+}
+}
+@media (max-width: 560px) {
+    #results {
+        flex-direction: column;
+        width: 90%;
+        font-size: 18px;
+    }
+    #git-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+}
